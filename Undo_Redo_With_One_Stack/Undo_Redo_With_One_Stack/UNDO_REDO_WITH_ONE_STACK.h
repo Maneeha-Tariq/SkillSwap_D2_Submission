@@ -1,0 +1,205 @@
+//BSEF24M046
+#ifndef UNDO_REDO_WITH_ONE_STACK_H
+#define UNDO_REDO_WITH_ONE_STACK_H
+#include<iostream>
+using namespace std;
+#include "Stack.h"
+#include "String.h"
+#include "Array.cpp"
+template <typename T>
+class Array
+{
+	T* data;
+	int size;
+	bool isValidIndex(int index) const
+	{
+		return (index >= 0 && index < size);
+
+	}
+public:
+	Array()
+	{
+		data = nullptr;
+		size = 0;
+	}
+	Array(int s) :Array()
+	{
+		if (s > 0)
+		{
+			data = new T[s];
+			size = s;
+		}
+	}
+	Array(const Array& r) :Array()
+	{
+		if (r.size <= 0)
+			return;
+		size = r.size;
+		data = new T[size];
+		for (int i = 0; i < size; i++)
+		{
+			data[i] = r.data[i];
+		}
+	}
+	Array<T>& operator=(const Array<T>& r)
+	{
+		if (r.size == 0)
+		{
+			this->~Array();
+			return *this;
+		}
+		if (this == &r)
+			return *this;
+		this->~Array();
+		size = r.size;
+		data = new T[size];
+		int i;
+		for (i = 0; i < size; i++)
+		{
+			data[i] = r.data[i];
+		}
+		return *this;
+	}
+	Array(Array<T>&& other) :Array()
+	{
+		data = other.data;
+		size = other.size;
+		other.data = nullptr;
+		other.size = 0;
+	}
+	Array<T>& operator=(Array<T>&& other)
+	{
+		if (this == &other)
+		{
+			return *this;
+		}
+		delete[] data;
+
+		data = other.data;
+		size = other.size;
+
+		other.data = nullptr;
+		other.size = 0;
+
+		return *this;
+	}
+	const T& operator [](int index) const
+	{
+		if (isValidIndex(index))
+		{
+			return data[index];
+		}
+		else
+		{
+			cout << "Index out of bound";
+			exit(0);
+		}
+	}
+	T& operator [](int index)
+	{
+		if (isValidIndex(index))
+		{
+			return data[index];
+		}
+		else
+		{
+			cout << "Index out of bound";
+			exit(0);
+		}
+	}
+	int getSize() const
+	{
+		return size;
+	}
+	void reSize(int s)
+	{
+		if (s <= 0)
+		{
+			this->~Array();
+			return;
+		}
+		T* temp = new T[s];
+		int i = 0;
+		while (i < size && i < s)
+		{
+			temp[i] = data[i];
+			i++;
+		}
+		this->~Array();
+		data = temp;
+		size = s;
+	}
+	~Array()
+	{
+		if (data)
+		{
+			delete[]data;
+			data = nullptr;
+		}
+		size = 0;
+	}
+	Array(initializer_list<T> val) :Array()
+	{
+		size = val.size();
+		if (size == 0)
+			return;
+		data = new T[size];
+		int i = 0;
+		for (auto x : val)
+		{
+			data[i] = x;
+			i++;
+		}
+	}
+	const T* begin()
+	{
+		return &data[0];
+	}
+	const T* end()
+	{
+		return &data[size];
+	}
+};
+template <typename T>
+ostream& operator <<(ostream& out, const Array<T>& r)
+{
+	out << "{";
+	for (int i = 0; i < r.getSize(); i++)
+	{
+		out << r[i];
+		if (i < r.getSize() - 1)
+		{
+			out << " , ";
+		}
+	}
+	out << "}";
+	return out;
+}
+template <typename T>
+istream& operator >>(istream& out, Array<T>& r)
+{
+	for (int i = 0; i < r.getSize(); i++)
+	{
+		out >> r[i];
+	}
+	return out;
+}
+class UndoRedoWithOneStack
+{
+	int capacity;
+	Array<String> redoC;
+	Stack<String> UndoRedoStack;
+	String redoCount(const String& c);
+	int redoIndex = 0;
+
+public:
+
+	UndoRedoWithOneStack(int c = 100);
+	void performAction(const String& op);
+	String undo();
+	String  redo();
+	int getSize();
+};
+#endif
+
+

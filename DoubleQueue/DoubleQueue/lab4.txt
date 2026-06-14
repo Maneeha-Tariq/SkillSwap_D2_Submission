@@ -1,0 +1,8 @@
+7
+add 5
+add 2
+add 9
+jerry!
+take
+add 7
+jerry!
