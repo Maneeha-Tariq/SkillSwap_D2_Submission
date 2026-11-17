@@ -1,0 +1,58 @@
+﻿
+
+
+<div class="modal fade" id="postSkillModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Post a Skill
+                    </h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <form id="postSkillForm">
+                        <div class="modal-body">
+                            <p class="small text-secondary">
+                                Offer what you know or request a skill you want to master.
+                                </p>
+                                <label class="form-label">
+                                    Listing Type
+                                </label>
+                                <div class="btn-group w-100 mb-3" role="group">
+                                    <input type="radio" class="btn-check" name="listingType" id="offering" value="offering" checked>
+                                    <label class="btn btn-outline-main" for="offering">
+                                        I can Teach
+                                    </label>
+                                    <input type="radio" class="btn-check" name="listingType" id="learning" value="learning">
+                                    <label class="btn btn-outline-main" for="learning">
+                                        I want to Learn
+                                    </label>
+                                    </div>
+                                    <label class="form-label">
+                                        Skill Title
+                                    </label>
+                                    <input class="form-control mb-3" id="skillTitle" required placeholder="e.g. Intermediate Python">
+                                    <label class="form-label">
+                                        Category
+                                    </label>
+                                    <select class="form-select mb-3" id="skillCategory">
+                                        <option>Programming</option>
+                                        <option>Graphic Design</option>
+                                        <option>Digital Marketing</option>
+                                        <option>Languages</option>
+                                        <option>Photography</option>
+                                        <option>Music & Audio</option>
+                                    </select>
+                                    <label class="form-label">
+                                        Description & Experience
+                                    </label>
+                                    <textarea class="form-control" id="skillDescription" rows="3" required placeholder="Describe your level, topics covered, or preferred schedule..."></textarea>
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-main">Publish Skill</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
