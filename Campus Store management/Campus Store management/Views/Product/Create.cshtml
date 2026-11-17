@@ -1,0 +1,25 @@
+﻿
+<title>Create Product</title>
+
+<h1 class="text-center">Create Product</h1>
+
+
+<form method="post" action="/Product/Create" class="mt-4">
+
+    @* <div asp-validation-summary="All" class="text-danger"></div> *@
+    <label class="mb-4">Enter id: </label>
+    <input class="mx-lg-4"  type="number" name="ProductId" />
+    <label>Enter Product Name: </label>
+    <input class="mx-lg-4"  type="text" name="ProductName" />
+    <label>Enter Price: </label>
+    <input class="mx-lg-4" type="number" name="Price" />
+
+    <label> Enter Category: </label>
+    <input class="mx-lg-4"type="text" name="Category" />
+
+    <input class="btn btn-primary" type="submit" value="Add Product" />
+</form>
+
+@section Scripts{
+  <script src="~js/product.js"></script>
+}

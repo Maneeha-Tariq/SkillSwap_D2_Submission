@@ -6,7 +6,7 @@
     <RootNamespace>Project_App_2</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Project_App_2.Program</StartupObject>
+    <StartupObject>Project_App_2.DebuggingPracticeMain</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

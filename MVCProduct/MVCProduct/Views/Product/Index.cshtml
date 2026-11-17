@@ -1,0 +1,264 @@
+﻿@* @model List<MVCProduct.Models.Product>
+<html>
+    <head>
+        <style> *@
+            @* /* .box
+            {
+                background-color: coral;
+            }
+            .button
+            {
+                position: fixed;
+                right:0;
+                bottom:0;
+            } */
+            .parent
+            {
+                position: relative;
+                background-color: black;
+                color: white;
+                width: 300px;
+                padding: 10px;
+            }
+            .child
+            {
+                position: absolute;
+                top:0;
+                left:0;
+                background-color: red;
+                color: white;
+            } *@
+    @*     </style>
+    </head> *@
+    @* <head> 
+        <title>View All Products</title>
+    </head>
+    <body>
+        <h1 style="text-align: center">Products</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ProductId</th>
+                    <th>ProductName</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            @foreach(var prod in Model)
+            {
+                <tr>
+                    <td>@prod.productId</td>
+                    <td>@prod.ProductName</td>
+                    <td>@prod.price</td>
+                </tr>
+            }
+        </table>
+
+
+    </body> *@
+    // grid system and breakpoints concept
+    @* <body>
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    Student1
+                </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                Student2
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                Student3
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                Student4
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                Student5
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                Student6
+            </div>
+            </div>
+        </div>
+    </body> *@
+    // css positioning practice
+    @* <body>
+    <h1 style = "text-align: center">
+        <strong>Welcome to our website!</strong>
+    </h1>
+    <p>
+        Nice to meet you!if you have any question about our services,feel free to contact us.
+    </p>
+    <div class="box"> Chat with us</div>
+    <button class="button">click here to contact</button>
+    </body> *@
+@* 
+    <body>
+        <div class="parent">
+        <img src="Image/sneekers.jpg" alt="White sneakers" />
+            <p>White sneakers</p>
+            <p>Rs.2500</p>
+            <div class="child">
+                <p>SALE</p>
+            </div>
+        </div>
+    </body>
+</html> *@
+
+
+@* <html>
+<head>
+    <title>Bootstrap Table</title>
+
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <h2 class="text-center mb-4">Student Records</h2>
+
+        <!-- Responsive Table -->
+        <div class="table-responsive">
+
+            <table class="table table-striped table-bordered
+                table-hover table-sm">
+
+                <!-- Table Header -->
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Marks</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali</td>
+                        <td>CS</td>
+                        <td>85</td>
+                        <td class="table-success">Passed</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Sara</td>
+                        <td>SE</td>
+                        <td>92</td>
+                        <td class="table-success">Passed</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Ahmed</td>
+                        <td>IT</td>
+                        <td>35</td>
+                        <td class="table-danger">Failed</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Ayesha</td>
+                        <td>CS</td>
+                        <td>78</td>
+                        <td class="table-warning">Pending</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html> *@
+
+                      
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <style>
+            /* Puri website ka layout */
+            .container {
+                display: grid;
+                /* 2 columns: sidebar choti, content bara */
+                grid-template-columns: 1fr 2fr;
+                /* Rows ki height */
+                grid-template-rows: 70px 250px 60px;
+                /* Rows aur columns ke darmiyan space */
+                gap: 10px;
+                padding: 10px;
+                background-color: lightgray;
+            }
+
+            .header {
+                background-color: royalblue;
+                color: white;
+                /* Dono columns ki space lega */
+                grid-column: 1 / 3;
+            }
+
+            .sidebar {
+                background-color: lightgreen;
+            }
+
+            .main {
+                background-color: white;
+                /* Main content ke andar bhi grid */
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .card {
+                background-color: lightblue;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .footer {
+                background-color: plum;
+                /* Footer dono columns ki space lega */
+                grid-column: 1 / 3;
+            }
+
+            /* Header, sidebar aur footer ka content center */
+            .header,
+            .sidebar,
+            .footer {
+                display: grid;
+                place-items: center;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">Student Dashboard</div>
+
+        <div class="sidebar">
+            Sidebar
+        </div>
+
+        <div class="main">
+            <div class="card">Courses</div>
+            <div class="card">Marks</div>
+            <div class="card">Attendance</div>
+            <div class="card">Tasks</div>
+        </div>
+
+        <div class="footer">Footer</div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,959 @@
+//index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow"
+         style="background-color: #332052;">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                Skill<span style="color: #BDA4FF;">Swap</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explore">Explore Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light px-4" href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-primary px-4" href="signup.html">Sign Up</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="py-5"
+             style="background: linear-gradient(120deg, #EDE5FF, #DDF5EC);">
+
+        <div class="container">
+
+            <div class="row align-items-center py-5">
+
+                <div class="col-lg-7">
+
+                    <h1 class="display-3 fw-bold mb-4"
+                        style="color: #332052;">
+
+                        Share Your Skills,<br>
+                        <span style="color: #7956D8;">
+                            Learn Something New
+                        </span>
+
+                    </h1>
+
+                    <p class="lead text-secondary mb-4">
+                        Connect with fellow students, share what you know,
+                        and learn new skills through peer-to-peer collaboration.
+                    </p>
+
+                    <a class="btn btn-primary btn-lg me-2 px-4" href="#explore">
+                        Explore Skills
+                    </a>
+
+                    <a class="btn btn-outline-primary btn-lg px-4" href="signup.html">
+                        Join Now
+                    </a>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="text-center p-5 mt-4 mt-lg-0 bg-white rounded-4 shadow">
+
+                        <div class="display-1 mb-3">🎓</div>
+
+                        <h3 class="fw-bold" style="color: #332052;">
+                            Learn. Share. Grow.
+                        </h3>
+
+                        <p class="text-secondary mb-0">
+                            Skills become stronger when shared.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="py-4" style="background-color: #FFF9F3;">
+
+        <div class="container">
+
+            <div class="input-group input-group-lg shadow-sm">
+
+                <input type="text" class="form-control"
+                       placeholder="Search for skills...">
+
+                <button class="btn btn-primary px-4">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Explore Skills -->
+    <section class="py-5" id="explore">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-3"
+                style="color: #332052;">
+
+                Explore Popular Skills
+
+            </h2>
+
+            <p class="text-center text-secondary lead mb-5">
+                Explore a variety of skills and find what interests you!
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card skill-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">💻</div>
+
+                        <h5 class="fw-bold mt-3">Programming</h5>
+
+                        <p class="text-secondary mb-0">
+                            Learn coding and development skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card skill-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">🎨</div>
+
+                        <h5 class="fw-bold mt-3">Graphic Design</h5>
+
+                        <p class="text-secondary mb-0">
+                            Create creative designs and illustrations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card skill-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">📢</div>
+
+                        <h5 class="fw-bold mt-3">Digital Marketing</h5>
+
+                        <p class="text-secondary mb-0">
+                            Learn social media and online marketing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card skill-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">🌐</div>
+
+                        <h5 class="fw-bold mt-3">Languages</h5>
+
+                        <p class="text-secondary mb-0">
+                            Learn and practice new languages.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+
+                <a href="extra-categories.html"
+                   class="btn btn-outline-primary btn-lg px-4">
+
+                    View All Skills
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="py-5"
+             id="how-it-works"
+             style="background: linear-gradient(120deg, #EDE5FF, #DDF5EC);">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-3"
+                style="color: #332052;">
+
+                How SkillSwap Works
+
+            </h2>
+
+            <p class="text-center text-secondary lead mb-5">
+                Start your skill-sharing journey in three simple steps.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card step-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">👤</div>
+
+                        <h5 class="fw-bold mt-3">1. Create Your Account</h5>
+
+                        <p class="text-secondary mb-0">
+                            Sign up and create your student profile to get started.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card step-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">🤝</div>
+
+                        <h5 class="fw-bold mt-3">2. Share or Find Skills</h5>
+
+                        <p class="text-secondary mb-0">
+                            Share your skills or explore skills you want to learn.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card step-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">🚀</div>
+
+                        <h5 class="fw-bold mt-3">3. Connect and Learn</h5>
+
+                        <p class="text-secondary mb-0">
+                            Connect with other students and exchange knowledge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Meet Our Skilled Students -->
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-3"
+                style="color: #332052;">
+
+                Meet Our Skilled Students
+
+            </h2>
+
+            <p class="text-center text-secondary lead mb-5">
+                Connect with talented students and learn from each other.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Student 1 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card student-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">👩🏻‍💻</div>
+
+                        <h5 class="fw-bold mt-3">Sarah</h5>
+
+                        <h6 style="color: #7956D8;">
+                            Web Development
+                        </h6>
+
+                        <p class="text-secondary">
+                            Frontend developer
+                        </p>
+
+                        <a href="#" class="btn btn-primary mt-auto">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Student 2 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card student-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">👨🏻‍🎨</div>
+
+                        <h5 class="fw-bold mt-3">Ahmed</h5>
+
+                        <h6 style="color: #7956D8;">
+                            Graphic Design
+                        </h6>
+
+                        <p class="text-secondary">
+                            Creative designer
+                        </p>
+
+                        <a href="#" class="btn btn-primary mt-auto">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Student 3 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card student-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">👩🏻‍🎤</div>
+
+                        <h5 class="fw-bold mt-3">Ayesha</h5>
+
+                        <h6 style="color: #7956D8;">
+                            Photography
+                        </h6>
+
+                        <p class="text-secondary">
+                            Photography enthusiast
+                        </p>
+
+                        <a href="#" class="btn btn-primary mt-auto">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Student 4 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card student-card text-center p-4 h-100 border-0 rounded-4 shadow-sm">
+
+                        <div class="fs-1">👨🏻‍💻</div>
+
+                        <h5 class="fw-bold mt-3">Ali</h5>
+
+                        <h6 style="color: #7956D8;">
+                            Programming
+                        </h6>
+
+                        <p class="text-secondary">
+                            C++ and Python learner
+                        </p>
+
+                        <a href="#" class="btn btn-primary mt-auto">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4"
+            style="background-color: #332052; border-top: 4px solid #7956D8;">
+
+        <p class="mb-0">
+            2025 SkillSwap. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+//login
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SkillSwap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-lg-5">
+                <div class="card auth-card shadow p-4">
+                    <h1 class="fw-bold" >Skill Swap</h1>
+
+                    <p class="lead fw-bold" >Welcome Back!</p>
+                    <p class="lead text-secondary mb-4">Login to continue your learning journey.</p>
+
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <input type="submit" class=" btn btn-primary w-100" value="Login" />
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="auth-footer text-center mt-4"> 
+        Don't have an account?<a href="signup.html">Sign Up</a>
+    </footer>
+</body>
+</html> 
+
+
+//signup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - SkillSwap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-lg-5">
+                <div class="card auth-card shadow p-4">
+                    <h1 class="fw-bold">Skill Swap</h1>
+
+                    <p class="lead fw-bold">Create your account</p>
+                    <p class="lead text-secondary mb-4">Join our community and start sharing skills..</p>
+
+                    <form method="post">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required minlength="8">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+
+                        <input type="submit" class=" btn btn-primary w-100" value="Create Account" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="auth-footer text-center mt-4">
+        Already have an account?<a href="login.html">Login</a>
+    </footer>
+</body>
+</html>
+
+
+//css
+
+/* Color Theme */
+:root {
+    --dark-purple: #332052;
+    --purple: #7956D8;
+    --lavender: #EDE5FF;
+    --mint: #DDF5EC;
+    --cream: #FFF9F3;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #30283D;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-purple);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #BDA4FF;
+    }
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+    .btn-primary:hover {
+        background-color: var(--dark-purple);
+        border-color: var(--dark-purple);
+    }
+
+.btn-outline-primary {
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--purple);
+        border-color: var(--purple);
+    }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, var(--lavender), var(--mint));
+}
+
+    .hero-section h1 {
+        color: var(--dark-purple);
+    }
+
+        .hero-section h1 span {
+            color: var(--purple);
+        }
+
+.hero-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(51, 32, 82, 0.12);
+}
+
+/* Search Section */
+.search-section {
+    background-color: var(--cream);
+}
+
+/* Section Headings */
+.section-title {
+    color: var(--dark-purple);
+}
+
+/* Skill Cards */
+.skill-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .skill-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+/* How It Works */
+.how-section {
+    background: linear-gradient(120deg, var(--lavender), var(--mint));
+}
+
+.step-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .step-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+/* Student Cards */
+.student-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .student-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+.student-skill {
+    color: var(--purple);
+}
+.auth-card {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--lavender);
+}
+.auth-card h1 {
+    color: #7956D8;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.auth-card p.lead.fw-bold {
+    color: #332052;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.auth-card p.text-secondary {
+    text-align: center;
+    font-size: 15px;
+}
+.auth-card .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D8CDEE;
+}
+
+.auth-card .form-control:focus {
+    border-color: #7956D8;
+    box-shadow: 0 0 5px rgba(121, 86, 216, 0.3);
+}
+.auth-card .btn-primary {
+    background-color: #7956D8;
+    border-color: #7956D8;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.auth-card .btn-primary:hover {
+    background-color: #332052;
+    border-color: #332052;
+}
+/* Footer */
+footer {
+    background-color: var(--dark-purple);
+    border-top: 4px solid var(--purple);
+}
+
+.auth-footer {
+    background-color: transparent;
+    border-top: none;
+    color: #332052;
+    font-size: 15px;
+}
+.auth-footer a {
+    color: #7956D8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    color: #332052;
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* ===== New Homepage Design ===== */
+
+/* Page Background */
+body {
+    background-color: #F7F6FA;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(51, 32, 82, 0.15);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-link {
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(120deg, #332052, #7956D8, #A78BFA);
+    border-radius: 28px;
+    padding: 85px 40px;
+    margin: 30px auto;
+    box-shadow: 0 15px 35px rgba(51, 32, 82, 0.2);
+}
+
+    .hero-section h1 {
+        color: white;
+        font-size: 48px;
+        font-weight: 750;
+    }
+
+        .hero-section h1 span {
+            color: #DDF5EC;
+        }
+
+    .hero-section p {
+        color: #F3EEFF;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+/* Hero Box */
+.hero-box {
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 30px rgba(30, 15, 55, 0.15);
+}
+
+/* Search */
+.search-section {
+    background: transparent;
+    padding: 30px 0;
+}
+
+.search-box {
+    max-width: 750px;
+    margin: auto;
+}
+
+    .search-box .form-control {
+        border-radius: 30px 0 0 30px;
+        padding: 15px 22px;
+        border: 1px solid #DED5F2;
+        box-shadow: 0 5px 18px rgba(51, 32, 82, 0.07);
+    }
+
+    .search-box .btn {
+        border-radius: 0 30px 30px 0;
+        padding: 12px 28px;
+    }
+
+/* Section Headings */
+.section-title {
+    font-size: 34px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #777184;
+    font-size: 16px;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: linear-gradient(145deg, #FFFFFF, #F0EAFE);
+    border: 1px solid #E5DCF8;
+    border-radius: 22px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 20px rgba(51, 32, 82, 0.06);
+}
+
+.skill-icon {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+/* How It Works */
+.how-section {
+    background: linear-gradient(120deg, #EDE5FF, #DDF5EC);
+    border-radius: 28px;
+    padding: 65px 25px;
+    margin: 35px 0;
+}
+
+.step-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 22px;
+    padding: 30px 20px;
+}
+
+/* Student Cards */
+.student-card {
+    background-color: white;
+    border: 1px solid #E9E1F7;
+    border-radius: 22px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 20px rgba(51, 32, 82, 0.06);
+}
+
+.student-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.student-skill {
+    color: #7956D8;
+    font-weight: 600;
+}
+
+/* Card Hover */
+.skill-card,
+.step-card,
+.student-card {
+    transition: all 0.3s ease;
+}
+
+    .skill-card:hover,
+    .step-card:hover,
+    .student-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 14px 28px rgba(51, 32, 82, 0.13) !important;
+    }
+
+/* Footer */
+footer {
+    background-color: #332052;
+    border-top: 4px solid #7956D8;
+    padding: 28px 15px;
+    margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+        .hero-section h1 {
+            font-size: 34px;
+        }
+
+    .section-title {
+        font-size: 27px;
+    }
+}

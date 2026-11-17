@@ -1,0 +1,42 @@
+﻿@using Campus_Store_management.Models.ViewModel
+
+@model DashboardViewModel;
+
+@{
+    ViewData["Title"] = "Welcome to Campus Store";
+    ViewBag.TotalProducts = Model.product.Count;
+    ViewBag.TotalCustomers = Model.customer.Count;
+}
+
+<div >
+    <h1 class="text-center"><strong>@ViewData["Title"]</strong></h1>
+    <div class="container mt-4">
+        <div class="row" >
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body border border-1 rounded bg-primary">
+                        <h4 class="text-center text-light">Total Products</h4>
+                        <h5 class="text-center text-light">@ViewBag.TotalProducts</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="card">
+                    <div class="card-body border border-1 rounded bg-success">
+                        <h4 class="text-center text-light">Total Customers</h4>
+                        <h5 class="text-center text-light">@ViewBag.TotalCustomers</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="mt-4">
+  <h1>Recent Products</h1>
+  @foreach(var prod in Model.product)
+    {
+        <p>@prod.ProductName</p>
+    }
+</div>
+

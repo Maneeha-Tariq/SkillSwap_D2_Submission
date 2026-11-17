@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Exam Portal</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CookieExamPractice.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="Exam" asp-action="ShowPreferences">Exam Portal</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" asp-controller="Exam" asp-action="SavePreferences">Save Preference</a>
+                    <a class="nav-link" asp-controller="Exam" asp-action="Delete">Delete All Preference</a>
+                </div>
+            </div>
+        </nav>
+       @await RenderSectionAsync("Header", required: false)
+    </header>
+   
+    <div class="container mb-3">
+        @RenderBody()
+    </div>
+    <footer class="text-center border-bottom">
+        Exam Portal - All rights reserved
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

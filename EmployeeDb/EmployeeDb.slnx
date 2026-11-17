@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Business_Object/Business_Object.csproj" Id="8d7a1b23-b3e8-452f-aa55-96701610d49e" />
+  <Project Path="DAL/ProductMain.csproj" Id="29cd2ca8-c87a-4caf-8bcd-9076420e89ca" />
+  <Project Path="ProductMain/_DAL.csproj" Id="e8d67ff2-7f51-4f96-a8f5-f6cf8b659bcb" />
+  <Project Path="User/User.csproj" Id="8f8d9626-99c7-4c54-945f-5bdeae0cd061" />
+</Solution>

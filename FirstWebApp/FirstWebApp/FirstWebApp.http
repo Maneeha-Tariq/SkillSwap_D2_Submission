@@ -1,0 +1,6 @@
+@FirstWebApp_HostAddress = http://localhost:5139
+
+GET {{FirstWebApp_HostAddress}}/Auth/
+Accept: application/json
+
+###

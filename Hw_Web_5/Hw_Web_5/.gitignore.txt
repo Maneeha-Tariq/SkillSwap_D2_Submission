@@ -1,0 +1,22 @@
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# NuGet packages
+packages/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

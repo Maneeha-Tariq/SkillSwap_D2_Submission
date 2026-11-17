@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DatabaseCreatuon/DatabaseCreation.csproj" Id="28e713cb-f21f-423b-8f2a-70f7eaba8a81" />
+  <Project Path="Employee/Business_Object.csproj" Id="de69e0af-12e9-48c9-8140-6108f6321417" />
+  <Project Path="EmployeeDAL/EmployeeDAL.csproj" Id="d851ace3-e4a7-4d3c-a8a9-7c7cdee02dbc" />
+  <Project Path="EmployeeMain/EmployeeMain.csproj" Id="f0a44bbb-38a1-4a75-9a3f-9df82cb65873" />
+</Solution>

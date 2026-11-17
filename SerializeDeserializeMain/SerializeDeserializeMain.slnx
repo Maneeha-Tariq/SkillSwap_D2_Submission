@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Bussiness_Object/Bussiness_Object.csproj" />
+  <Project Path="HotelManageUsingDisconneced/HotelManageUsingDisconnected.csproj" Id="126e77d5-93fc-4c73-8df0-c1ded7ebecef" />
+  <Project Path="SerializeDeserialize/SerializeDeserialize.csproj" Id="52e222b9-c01e-48fc-bae0-c2bc6ebb5b38" />
+  <Project Path="TransactionPractice/TransactionPractice.csproj" Id="65a7b656-8064-4087-a135-3094addb9e62" />
+</Solution>

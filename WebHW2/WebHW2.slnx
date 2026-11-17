@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LibraryData/LibraryData.csproj" />
+  <Project Path="WebHW2/LibraryApp.csproj" />
+</Solution>

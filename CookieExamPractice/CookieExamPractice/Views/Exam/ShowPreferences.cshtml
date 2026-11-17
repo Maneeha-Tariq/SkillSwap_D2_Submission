@@ -1,0 +1,33 @@
+﻿@model ExamPreferenceViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Exam Preferences</h2>
+<p>@Model.Count</p>
+<table class="table table-striped table-bordered table-hover" >
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Exam Mode</th>
+            <th>Duration</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var e in Model.Plist)
+        {
+            <tr>
+                <td>@e.Subject</td>
+                <td>@e.ExamMode</td>
+                <td>@e.Duration</td>
+                <td>
+                    <a asp-controller="Exam" asp-action="RemovePreferences" asp-route-subject="@e.Subject">Remove</a>
+                </td>
+           </tr>
+        }
+    </tbody>
+</table>
+@section Header{
+    <h2>Show Preferences</h2>
+}
+

@@ -1,0 +1,378 @@
+﻿
+/* Color Theme */
+:root {
+    --dark-purple: #332052;
+    --purple: #7956D8;
+    --lavender: #EDE5FF;
+    --mint: #DDF5EC;
+    --cream: #FFF9F3;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #30283D;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-purple);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #BDA4FF;
+    }
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+    .btn-primary:hover {
+        background-color: var(--dark-purple);
+        border-color: var(--dark-purple);
+    }
+
+.btn-outline-primary {
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--purple);
+        border-color: var(--purple);
+    }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, var(--lavender), var(--mint));
+}
+
+    .hero-section h1 {
+        color: var(--dark-purple);
+    }
+
+        .hero-section h1 span {
+            color: var(--purple);
+        }
+
+.hero-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(51, 32, 82, 0.12);
+}
+
+/* Search Section */
+.search-section {
+    background-color: var(--cream);
+}
+
+/* Section Headings */
+.section-title {
+    color: var(--dark-purple);
+}
+
+/* Skill Cards */
+.skill-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .skill-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+/* How It Works */
+.how-section {
+    background: linear-gradient(120deg, var(--lavender), var(--mint));
+}
+
+.step-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .step-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+/* Student Cards */
+.student-card {
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+    .student-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(51, 32, 82, 0.15) !important;
+    }
+
+.student-skill {
+    color: var(--purple);
+}
+.auth-card {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--lavender);
+}
+.auth-card h1 {
+    color: #7956D8;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.auth-card p.lead.fw-bold {
+    color: #332052;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.auth-card p.text-secondary {
+    text-align: center;
+    font-size: 15px;
+}
+.auth-card .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D8CDEE;
+}
+
+.auth-card .form-control:focus {
+    border-color: #7956D8;
+    box-shadow: 0 0 5px rgba(121, 86, 216, 0.3);
+}
+.auth-card .btn-primary {
+    background-color: #7956D8;
+    border-color: #7956D8;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.auth-card .btn-primary:hover {
+    background-color: #332052;
+    border-color: #332052;
+}
+/* Footer */
+footer {
+    background-color: var(--dark-purple);
+    border-top: 4px solid var(--purple);
+}
+
+.auth-footer {
+    background-color: transparent;
+    border-top: none;
+    color: #332052;
+    font-size: 15px;
+}
+.auth-footer a {
+    color: #7956D8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    color: #332052;
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* ===== New Homepage Design ===== */
+
+/* Page Background */
+body {
+    background-color: #F7F6FA;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(51, 32, 82, 0.15);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-link {
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(120deg, #332052, #7956D8, #A78BFA);
+    border-radius: 28px;
+    padding: 85px 40px;
+    margin: 30px auto;
+    box-shadow: 0 15px 35px rgba(51, 32, 82, 0.2);
+}
+
+    .hero-section h1 {
+        color: white;
+        font-size: 48px;
+        font-weight: 750;
+    }
+
+        .hero-section h1 span {
+            color: #DDF5EC;
+        }
+
+    .hero-section p {
+        color: #F3EEFF;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+/* Hero Box */
+.hero-box {
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 30px rgba(30, 15, 55, 0.15);
+}
+
+/* Search */
+.search-section {
+    background: transparent;
+    padding: 30px 0;
+}
+
+.search-box {
+    max-width: 750px;
+    margin: auto;
+}
+
+    .search-box .form-control {
+        border-radius: 30px 0 0 30px;
+        padding: 15px 22px;
+        border: 1px solid #DED5F2;
+        box-shadow: 0 5px 18px rgba(51, 32, 82, 0.07);
+    }
+
+    .search-box .btn {
+        border-radius: 0 30px 30px 0;
+        padding: 12px 28px;
+    }
+
+/* Section Headings */
+.section-title {
+    font-size: 34px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #777184;
+    font-size: 16px;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: linear-gradient(145deg, #FFFFFF, #F0EAFE);
+    border: 1px solid #E5DCF8;
+    border-radius: 22px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 20px rgba(51, 32, 82, 0.06);
+}
+
+.skill-icon {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+/* How It Works */
+.how-section {
+    background: linear-gradient(120deg, #EDE5FF, #DDF5EC);
+    border-radius: 28px;
+    padding: 65px 25px;
+    margin: 35px 0;
+}
+
+.step-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 22px;
+    padding: 30px 20px;
+}
+
+/* Student Cards */
+.student-card {
+    background-color: white;
+    border: 1px solid #E9E1F7;
+    border-radius: 22px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 20px rgba(51, 32, 82, 0.06);
+}
+
+.student-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.student-skill {
+    color: #7956D8;
+    font-weight: 600;
+}
+
+/* Card Hover */
+.skill-card,
+.step-card,
+.student-card {
+    transition: all 0.3s ease;
+}
+
+    .skill-card:hover,
+    .step-card:hover,
+    .student-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 14px 28px rgba(51, 32, 82, 0.13) !important;
+    }
+
+/* Footer */
+footer {
+    background-color: #332052;
+    border-top: 4px solid #7956D8;
+    padding: 28px 15px;
+    margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+        .hero-section h1 {
+            font-size: 34px;
+        }
+
+    .section-title {
+        font-size: 27px;
+    }
+}

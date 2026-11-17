@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Business Objects/Business Objects.csproj" />
+  <Project Path="ExecutionPoint/ExecutionPoint.csproj" />
+  <Project Path="_DAL/_DAL.csproj" />
+</Solution>

@@ -1,0 +1,51 @@
+﻿@model List<FirstMvCProject.Models.Student>
+<html>
+<head>
+    <style> 
+        table
+        { 
+            border-collapse: collapse; 
+            width: 80%; 
+            margin: 20px auto;
+        } 
+        th, td 
+        { 
+            border: 1px solid black; 
+            padding: 10px; 
+            text-align: center;
+        } 
+        th 
+        { 
+            background-color: lightgray; 
+        } 
+        h1 
+        { 
+            text-align: center; 
+        } 
+            
+       </style>
+</head>
+    <body>
+        <h1>View All Students</h1>
+        <table>
+        <tr> 
+            <th>StudentID</th> 
+            <th>StudentName</th> 
+            <th>RegistrationNumber</th> 
+            <th>Department</th> 
+            <th>AttendancePercentage</th> 
+        </tr>
+        @foreach (var student in Model)
+        {
+            <tr>
+
+                <td>@student.StudentId  </td> 
+                <td>@student.StudentName  </td>
+                <td>@student.RegistrationNumber  </td> 
+                <td>@student.Department  </td>
+                <td>@student.AttendancePercentage  </td>
+            </tr>
+        }
+        </table>
+    </body>
+</html>

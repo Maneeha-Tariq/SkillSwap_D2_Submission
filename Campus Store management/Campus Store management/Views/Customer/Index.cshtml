@@ -1,0 +1,31 @@
+﻿@model List<Customer>
+
+@{
+    ViewBag.Title = "Show Customer Details";
+    ViewData["Count"] = Model.Count;
+}
+<h1 class="text-center">@ViewBag.Title</h1>
+<h2 class="text-center">@ViewData["Count"]</h2>
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>CustomerId</th>
+            <th>CustomerName</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+      @foreach(var cust in Model)
+        {
+            <tr>
+                <td>@cust.CustomerId</td>
+                <td>@cust.CustomerName</td>
+                <td>@cust.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
